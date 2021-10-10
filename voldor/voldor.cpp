@@ -384,13 +384,13 @@ void VOLDOR::debug() {
 	for (int i = 0; i < n_flows_init; i++)
 		rigidnesses[i].copyTo(rigidnesses_world(Rect(w*(i / vis_img_per_col), h*(i % vis_img_per_col), w, h)));
 
-	imshow("rigidnesses_world", rigidnesses_world);
-	imshow("depth_est", cfg.viz_depth_scale / depth);
-	for (int i = 0; i < n_depth_priors; i++) {
-		imshow("depth_prior_" + to_string(i), cfg.viz_depth_scale / depth_priors[i]);
-		imshow("depth_prior_conf_" + to_string(i), depth_prior_confs[i]);
-		imshow("depth_prior_pconf_" + to_string(i), depth_prior_pconfs[i]);
-	}
-	if (waitKey(0) == 'q')
-		exit(0);
+	// imshow("rigidnesses_world", rigidnesses_world);
+	// imshow("depth_est", cfg.viz_depth_scale / depth);
+	// for (int i = 0; i < n_depth_priors; i++) {
+	// 	imshow("depth_prior_" + to_string(i), cfg.viz_depth_scale / depth_priors[i]);
+	// 	imshow("depth_prior_conf_" + to_string(i), depth_prior_confs[i]);
+	// 	imshow("depth_prior_pconf_" + to_string(i), depth_prior_pconfs[i]);
+	// }
+	// if (waitKey(0) == 'q')
+	// 	exit(0);
 }

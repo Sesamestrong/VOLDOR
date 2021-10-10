@@ -64,15 +64,15 @@ void align_frame(
 
 
 	
-	if (debug) {
-		for (int i = 0; i < N; i++) {
-			imshow("depth-" + to_string(i), 8 / depths[i]);
-			imshow("weight-" + to_string(i), weights[i]);
-			if (use_photo_consistency)
-				imshow("image-" + to_string(i), images[i]);
-		}
-		waitKey(0);
-	}
+	// if (debug) {
+	// 	for (int i = 0; i < N; i++) {
+	// 		imshow("depth-" + to_string(i), 8 / depths[i]);
+	// 		imshow("weight-" + to_string(i), weights[i]);
+	// 		if (use_photo_consistency)
+	// 			imshow("image-" + to_string(i), images[i]);
+	// 	}
+	// 	waitKey(0);
+	// }
 
 
 

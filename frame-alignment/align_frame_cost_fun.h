@@ -228,13 +228,13 @@ public:
 			}
 		}
 
-		if (debug) {
-			imshow("residual map-" + to_string(ref_fid) + "-" + to_string(tar_fid), residual_map.mul(residual_map));
-			//imshow("residual map-" + to_string(ref_fid) + "-" + to_string(tar_fid), residual_map);
+		// if (debug) {
+		// 	imshow("residual map-" + to_string(ref_fid) + "-" + to_string(tar_fid), residual_map.mul(residual_map));
+		// 	//imshow("residual map-" + to_string(ref_fid) + "-" + to_string(tar_fid), residual_map);
 
-			if (waitKey(1) == 'q')
-				exit(1);
-		}
+		// 	if (waitKey(1) == 'q')
+		// 		exit(1);
+		// }
 
 		return true;
 	}

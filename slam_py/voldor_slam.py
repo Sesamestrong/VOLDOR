@@ -708,10 +708,11 @@ class VOLDOR_SLAM:
                 #print('current scale = ', self.frames[0].scale,self.frames[-1].scale)
             #print(f'{self.fid_cur}  <-  {self.fid_cur_tmpkf}, {self.fid_cur_spakf}')
             if self.fid_cur_tmpkf >= 0:
-                cv2.imshow('tmpkf_depth', (self.basefocal*0.04)/self.frames[self.fid_cur_tmpkf].get_scaled_depth())
-                cv2.imshow('tmpkf_depth_conf', self.frames[self.fid_cur_tmpkf].depth_conf)
-                if cv2.waitKey(1) == 113:
-                    os._exit(1)
+                print("Display stuff")
+                # cv2.imshow('tmpkf_depth', (self.basefocal*0.04)/self.frames[self.fid_cur_tmpkf].get_scaled_depth())
+                # cv2.imshow('tmpkf_depth_conf', self.frames[self.fid_cur_tmpkf].depth_conf)
+                # if cv2.waitKey(1) == 113:
+                #     os._exit(1)
             while self._block_vo_signal:
                 time.sleep(0.01)
         self.end_of_vo = True
