@@ -95,7 +95,7 @@ double regularize_covar_LW_given_lambda(double* mat, double* mat_ret, double lam
 #else
 
 #include "aux_funs.h"
-#include <opencv2/highgui.hpp>
+// #include <opencv2/highgui.hpp>
 
 
 double inverse(double* mat, double* mat_inv, int N) {
