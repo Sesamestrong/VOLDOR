@@ -234,8 +234,8 @@ void align_frame(
 
 	if (debug) {
 		cout << summary.FullReport() << endl;
-		waitKey(0);
-		destroyAllWindows();
+		// waitKey(0);
+		// destroyAllWindows();
 	}
 	else {
 		//cout << summary.FullReport() << endl;

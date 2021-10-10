@@ -142,7 +142,7 @@ int VOLDOR::solve() {
 		if (cfg.debug)
 			debug();
 	}
-	destroyAllWindows();
+	// destroyAllWindows();
 	if (cfg.kitti_estimate_ground)
 		estimate_kitti_ground();
 	return iters_cur;
